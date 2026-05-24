@@ -1,0 +1,24 @@
+# YOLOE 后端完整参数（话题前缀 /perception_2d/）
+yoloe_segmentation:
+  ros__parameters:
+    algorithm_config_path: ""
+    object: ""
+    conf_threshold: 0.01
+    device: ""
+    camera_namespace: "camera_head"
+    sync_topics_from_namespace: true
+    image_topic: "/camera_head/color/image_raw"
+    detection_topic: "/perception_2d/detections"
+    label_map_topic: "/perception_2d/label_map"
+    label_map_viz_topic: "/perception_2d/label_map_viz"
+    instance_masks_topic: "/perception_2d/instance_masks"
+    publish_instance_masks: true
+    debug_image_topic: "/perception_2d/debug_image"
+    marker_topic: "/perception_2d/markers"
+    detection_rate: 5.0
+    publish_debug_image: true
+    publish_label_map: true
+    publish_markers: true
+    detection_frame_id: "camera_head_color_optical_frame"
+    use_color_image_frame_id: true
+    segmentation_enabled: true

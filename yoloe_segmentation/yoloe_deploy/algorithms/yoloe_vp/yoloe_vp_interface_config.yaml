@@ -1,0 +1,190 @@
+# checkpoint_path: "./weights/yoloe-26x-seg.pt"
+# device: "cuda"
+# target_list:
+#   - target_name: "fg_red_bull"
+#     ref_image_path: "./ref_template/ref_fg_red_bull.png"
+#     visual_bbox: [213, 98, 291, 206]
+#     visual_cls: 0
+checkpoint_path: "./weights/yoloe-26x-seg.pt"
+device: "cuda"
+target_list:
+  - target_name: "fg_red_bull"
+    ref_image_path: "./ref_template/ref_fg_red_bull.png"
+    visual_bbox: [213, 98, 291, 206]
+    visual_cls: 0
+
+  - target_name: "white_manghe"
+    ref_image_path: "./ref_template/ref_manghe.png"
+    visual_bbox: [221, 313, 294, 393]
+    visual_cls: 1
+
+  - target_name: "black_manghe"
+    ref_image_path: "./ref_template/ref_manghe.png"
+    visual_bbox: [406, 317, 461, 388]
+    visual_cls: 2
+
+  - target_name: "pink_manghe"
+    ref_image_path: "./ref_template/ref_manghe_pink.png"
+    visual_bbox: [322, 306, 377, 367]
+    visual_cls: 3
+  
+  - target_name: "nongfu_spring"
+    ref_image_path: "./ref_template/ref_nongfu_spring.png"
+    visual_bbox: [587, 150, 691, 506]
+    visual_cls: 4
+
+  - target_name: "niupai_1"
+    ref_image_path: "./ref_foundation_vision/ref_box_niupai_1.png"
+    visual_bbox: [655, 292, 904, 595]
+    visual_cls: 5
+
+  - target_name: "niupai_2"
+    ref_image_path: "./ref_foundation_vision/ref_box_niupai_2.png"
+    visual_bbox: [642, 301, 908, 586]
+    visual_cls: 6
+
+  - target_name: "niupai_3"
+    ref_image_path: "./ref_foundation_vision/ref_box_niupai_3.png"
+    visual_bbox: [667, 287, 903, 599]
+    visual_cls: 7
+
+  - target_name: "niupai_4"
+    ref_image_path: "./ref_foundation_vision/ref_box_niupai_4.png"
+    visual_bbox: [619, 293, 907, 600]
+    visual_cls: 8
+
+  - target_name: "niupai_5"
+    ref_image_path: "./ref_foundation_vision/ref_box_niupai_5.png"
+    visual_bbox: [638, 287, 887, 591]
+    visual_cls: 9
+
+  - target_name: "xiaoyu_1"
+    ref_image_path: "./ref_foundation_vision/ref_box_xiaoyu_1.png"
+    visual_bbox: [550, 322, 860, 596]
+    visual_cls: 10
+
+  - target_name: "xiaoyu_2"
+    ref_image_path: "./ref_foundation_vision/ref_box_xiaoyu_2.png"
+    visual_bbox: [529, 316, 831, 594]
+    visual_cls: 11
+
+  - target_name: "xiaoyu_3"
+    ref_image_path: "./ref_foundation_vision/ref_box_xiaoyu_3.png"
+    visual_bbox: [558, 320, 788, 601]
+    visual_cls: 12
+
+  - target_name: "xiaoyu_4"
+    ref_image_path: "./ref_foundation_vision/ref_box_xiaoyu_4.png"
+    visual_bbox: [559, 318, 815, 603]
+    visual_cls: 13
+
+  - target_name: "xiaoyu_5"
+    ref_image_path: "./ref_foundation_vision/ref_box_xiaoyu_5.png"
+    visual_bbox: [539, 320, 834, 602]
+    visual_cls: 14
+
+  - target_name: "xiaoyu_6"
+    ref_image_path: "./ref_foundation_vision/ref_box_xiaoyu_6.png"
+    visual_bbox: [531, 320, 842, 586]
+    visual_cls: 15
+
+  - target_name: "green_tea_1"
+    ref_image_path: "./ref_foundation_vision/ref_green_tea_1.png"
+    visual_bbox: [524, 274, 651, 563]
+    visual_cls: 16
+
+  - target_name: "green_tea_2"
+    ref_image_path: "./ref_foundation_vision/ref_green_tea_2.png"
+    visual_bbox: [531, 279, 655, 556]
+    visual_cls: 17
+
+  - target_name: "green_tea_3"
+    ref_image_path: "./ref_foundation_vision/ref_green_tea_3.png"
+    visual_bbox: [567, 262, 682, 537]
+    visual_cls: 18
+
+  - target_name: "ice_red_tea_1"
+    ref_image_path: "./ref_foundation_vision/ref_ice_red_tea_1.png"
+    visual_bbox: [594, 295, 724, 601]
+    visual_cls: 19
+
+  - target_name: "ice_red_tea_2"
+    ref_image_path: "./ref_foundation_vision/ref_ice_red_tea_2.png"
+    visual_bbox: [591, 293, 724, 599]
+    visual_cls: 20
+
+  - target_name: "ice_red_tea_3"
+    ref_image_path: "./ref_foundation_vision/ref_ice_red_tea_3.png"
+    visual_bbox: [604, 306, 722, 591]
+    visual_cls: 21
+
+  - target_name: "ice_red_tea_4"
+    ref_image_path: "./ref_foundation_vision/ref_ice_red_tea_4.png"
+    visual_bbox: [612, 306, 730, 587]
+    visual_cls: 22
+
+  - target_name: "ice_red_tea_5"
+    ref_image_path: "./ref_foundation_vision/ref_ice_red_tea_5.png"
+    visual_bbox: [598, 295, 722, 579]
+    visual_cls: 23
+
+  - target_name: "moli_tea_1"
+    ref_image_path: "./ref_foundation_vision/ref_moli_tea_1.png"
+    visual_bbox: [664, 309, 790, 588]
+    visual_cls: 24
+
+  - target_name: "moli_tea_2"
+    ref_image_path: "./ref_foundation_vision/ref_moli_tea_2.png"
+    visual_bbox: [683, 311, 803, 590]
+    visual_cls: 25
+
+  - target_name: "moli_tea_3"
+    ref_image_path: "./ref_foundation_vision/ref_moli_tea_3.png"
+    visual_bbox: [701, 313, 819, 584]
+    visual_cls: 26
+
+  - target_name: "moli_tea_4"
+    ref_image_path: "./ref_foundation_vision/ref_moli_tea_4.png"
+    visual_bbox: [651, 313, 768, 582]
+    visual_cls: 27
+
+  - target_name: "nongfu_spring_1"
+    ref_image_path: "./ref_foundation_vision/ref_nongfu_spring_1.png"
+    visual_bbox: [642, 211, 769, 589]
+    visual_cls: 28
+
+  - target_name: "nongfu_spring_2"
+    ref_image_path: "./ref_foundation_vision/ref_nongfu_spring_2.png"
+    visual_bbox: [656, 216, 770, 583]
+    visual_cls: 29
+
+  - target_name: "nongfu_spring_3"
+    ref_image_path: "./ref_foundation_vision/ref_nongfu_spring_3.png"
+    visual_bbox: [656, 212, 775, 586]
+    visual_cls: 30
+
+  - target_name: "three_tea_1_green_tea"
+    ref_image_path: "./ref_foundation_vision/ref_three_tea_1.png"
+    visual_bbox: [455, 307, 576, 586]
+    visual_cls: 31
+
+  - target_name: "three_tea_2_green_tea"
+    ref_image_path: "./ref_foundation_vision/ref_three_tea_2.png"
+    visual_bbox: [444, 311, 566, 584]
+    visual_cls: 32
+
+  - target_name: "three_tea_3_ice_red_tea"
+    ref_image_path: "./ref_foundation_vision/ref_three_tea_3.png"
+    visual_bbox: [869, 310, 1006, 596]
+    visual_cls: 33
+
+  - target_name: "three_tea_4_moli_tea"
+    ref_image_path: "./ref_foundation_vision/ref_three_tea_4.png"
+    visual_bbox: [642, 312, 762, 586]
+    visual_cls: 34
+
+  - target_name: "three_tea_5_moli_tea_2"
+    ref_image_path: "./ref_foundation_vision/ref_three_tea_5.png"
+    visual_bbox: [632, 315, 747, 582]
+    visual_cls: 35
+object: green_tea_1

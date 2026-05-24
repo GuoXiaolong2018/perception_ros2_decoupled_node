@@ -1,0 +1,150 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Name: 2D Perception Debug
+      Enabled: true
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Normalize Range: true
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /perception_2d/debug_image
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Name: Instance Label Map (YOLOE)
+      Enabled: true
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Normalize Range: false
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /perception_2d/label_map_viz
+      Value: true
+    - Class: rviz_default_plugins/Image
+      Name: Object Pose Debug (3D)
+      Enabled: true
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Normalize Range: true
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /perception_object/debug_image
+      Value: true
+    - Alpha: 0.82
+      Class: rviz_default_plugins/PointCloud2
+      Name: Camera Colored PointCloud
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Position Transformer: XYZ
+      Selectable: true
+      Size (Pixels): 2
+      Size (m): 0.01
+      Style: Flat Squares
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /camera_head/depth_registered/points
+      Use Fixed Frame: true
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: 2D BBox Markers
+      Enabled: true
+      Namespaces: {}
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /perception_2d/markers
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Object 3D Markers
+      Enabled: true
+      Namespaces: {}
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /perception_object/markers
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Object Pose Axes
+      Enabled: true
+      Namespaces: {}
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /perception_object/pose_markers
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Base Frame Detections
+      Enabled: true
+      Namespaces: {}
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /perception/detections_in_base_markers
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: camera_head_color_optical_frame
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 2.5
+      Enable Stereo Rendering: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0.5
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.5
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.785
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 900
+  Width: 1400

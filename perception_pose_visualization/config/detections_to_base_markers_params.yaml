@@ -1,0 +1,9 @@
+detections_to_base_json_to_markers:
+  ros__parameters:
+    json_topic: "/perception/detections_in_base"
+    markers_topic: "/perception/detections_in_base_markers"
+    marker_frame_id: "base"
+    marker_namespace: "perception_detections_in_base"
+    sphere_diameter_m: 0.06
+    marker_lifetime_sec: 1.2
+    text_scale_m: 0.05

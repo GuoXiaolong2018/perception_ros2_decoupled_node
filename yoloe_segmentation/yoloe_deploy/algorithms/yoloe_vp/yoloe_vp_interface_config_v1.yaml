@@ -1,0 +1,36 @@
+# checkpoint_path: "./weights/yoloe-26x-seg.pt"
+# device: "cuda"
+# target_list:
+#   - target_name: "fg_red_bull"
+#     ref_image_path: "./ref_template/ref_fg_red_bull.png"
+#     visual_bbox: [213, 98, 291, 206]
+#     visual_cls: 0
+checkpoint_path: "./weights/yoloe-11l-seg.pt"
+device: "cuda"
+target_list:
+  - target_name: "fg_red_bull"
+    ref_image_path: "./ref_template/ref_fg_red_bull.png"
+    visual_bbox: [213, 98, 291, 206]
+    visual_cls: 0
+
+  - target_name: "white_manghe"
+    ref_image_path: "./ref_template/ref_manghe.png"
+    visual_bbox: [221, 313, 294, 393]
+    visual_cls: 1
+
+  - target_name: "black_manghe"
+    ref_image_path: "./ref_template/ref_manghe.png"
+    visual_bbox: [406, 317, 461, 388]
+    visual_cls: 2
+
+  - target_name: "pink_manghe"
+    ref_image_path: "./ref_template/ref_manghe_pink.png"
+    visual_bbox: [322, 306, 377, 367]
+    visual_cls: 3
+  
+  - target_name: "nongfu_spring"
+    ref_image_path: "./ref_template/ref_nongfu_spring.png"
+    visual_bbox: [587, 150, 691, 506]
+    visual_cls: 4
+
+object: nongfu_spring

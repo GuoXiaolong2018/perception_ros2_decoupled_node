@@ -1,0 +1,5 @@
+detections_to_base:
+  ros__parameters:
+    input_topic: "/perception_object/detections"
+    output_topic: "/perception/detections_in_base"
+    base_x_offset: 0.0

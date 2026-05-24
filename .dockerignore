@@ -1,0 +1,43 @@
+# Git metadata
+.git
+.gitignore
+
+# ROS 2 build outputs
+ros2_ws/build
+ros2_ws/log
+ros2_ws/install
+camera_ros2_ws/build
+camera_ros2_ws/log
+camera_ros2_ws/install
+
+# Python / test cache
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/node_modules
+
+# Runtime & local-only dirs
+log/
+debug/
+prompt/
+prompt_*/
+scripts/
+_legacy_backup/
+yoloe_algo/
+doc/
+
+# Large / generated artifacts
+*.onnx
+*.engine
+*.jsonl
+*.csv
+demo/*.jsonl
+demo/*.csv
+*.gv
+*.pdf
+
+# Keep default YOLO weight for 2D package
+!yolo_detection/models/yolov8n.pt
+
+# Large third-party SDK (mount or copy at build time)
+docker/third_party/

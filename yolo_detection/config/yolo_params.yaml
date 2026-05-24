@@ -1,0 +1,15 @@
+yolo_detector_2d:
+  ros__parameters:
+    model_path: "models/yolov8n.pt"
+    conf_threshold: 0.01
+    device: "cuda:0"
+    target_classes: ["bottle", "cup", "person"]
+    camera_namespace: "camera_head"
+    sync_topics_from_namespace: true
+    image_topic: "/camera_head/color/image_raw"
+    detection_topic: "/yolo_detector/detections"
+    debug_image_topic: "/yolo_detector/debug_image"
+    detection_rate: 10.0
+    publish_debug_image: true
+    detection_frame_id: "camera_head_color_optical_frame"
+    use_color_image_frame_id: true

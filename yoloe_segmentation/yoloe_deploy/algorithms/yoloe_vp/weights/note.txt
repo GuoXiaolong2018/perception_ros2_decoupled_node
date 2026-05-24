@@ -1,0 +1,1 @@
+权重文件yoloe-11l-seg.pt可以在此连接下载：https://lcnnwa8es0bc.feishu.cn/wiki/ZlHywE6JqicIrpkHo80cffE6nbb

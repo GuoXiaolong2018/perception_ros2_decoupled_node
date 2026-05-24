@@ -1,0 +1,27 @@
+# YOLOE-VP 实例分割 ROS2 节点参数
+yoloe_segmentation:
+  ros__parameters:
+    # 算法 YAML（权重、参考图、target_list、object 等）；空则使用包内 yoloe_deploy 默认路径
+    algorithm_config_path: ""
+    # 推理目标类别名；空则使用 algorithm_config 中的 object 字段
+    object: ""
+    conf_threshold: 0.01
+    device: ""
+
+    camera_namespace: "camera_head"
+    sync_topics_from_namespace: true
+    image_topic: "/camera_head/color/image_raw"
+    detection_topic: "/yoloe_segmentation/detections"
+    label_map_topic: "/yoloe_segmentation/label_map"
+    label_map_viz_topic: "/yoloe_segmentation/label_map_viz"
+    instance_masks_topic: "/yoloe_segmentation/instance_masks"
+    publish_instance_masks: true
+    debug_image_topic: "/yoloe_segmentation/debug_image"
+    marker_topic: "/yoloe_segmentation/markers"
+    detection_rate: 5.0
+    publish_debug_image: true
+    publish_label_map: true
+    publish_markers: true
+    detection_frame_id: "camera_head_color_optical_frame"
+    use_color_image_frame_id: true
+    segmentation_enabled: true

@@ -1,0 +1,22 @@
+perception_object_pose:
+  ros__parameters:
+    min_score: 0.0
+    detections_input_topic: "/perception_2d/detections"
+    # 不设置 target_classes 或留空表示不过滤（YOLOE 类名与 COCO 不同）
+    camera_namespace: "camera_head"
+    sync_topics_from_namespace: true
+    image_topic: "/camera_head/color/image_raw"
+    depth_topic: "/camera_head/depth/image_raw"
+    camera_info_topic: "/camera_head/color/camera_info"
+    detection_topic: "/perception_object/detections"
+    debug_image_topic: "/perception_object/debug_image"
+    publish_debug_image: true
+    publish_markers: true
+    marker_topic: "/perception_object/markers"
+    marker_lifetime_sec: 1.2
+    use_color_image_frame_id: true
+    detection_frame_id: "camera_head_color_optical_frame"
+    object_x_axis_cam: [1.0, 0.0, 0.0]
+    object_y_axis_cam: [0.0, -1.0, 0.0]
+    publish_object_pose_json: true
+    object_pose_topic: "/perception_object/poses_json"
